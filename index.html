@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        label{
+            font-weight: 600;
+        }
+        tr{
+            border-bottom: 1px solid #ced4da;
+        }
+        .card{
+            border:none
+        }
+        button{
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            padding: 3px 10px;
+            width: 6rem;
+            border-radius: 3px;
+            color: #111;
+            font-size: 17px;
+        }
+        button:focus{
+            outline: none;
+        }
+        .del{
+            
+            cursor: pointer;
+            font-size: 20px;
+
+        }
+        @media(max-width: 550px){
+            .del{
+                font-size: 15px;
+            }
+            button{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-5" >
+                    <div class="card-body">
+                      <h1 class="card-title">Add Book</h1>
+                      
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Book Title</label>
+                          <input type="text" class="form-control" id="book_name">
+                    
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Author</label>
+                            <input type="text" class="form-control" id="author_name">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">ISBN</label>
+                            <input type="text" class="form-control" id="isbn">
+                          </div>
+                          <button type="submit" id="form_action">Submit</button>
+                        </div>
+                    </div>
+                  </div>
+
+
+                  <table class="table table-borderless ">
+                    <thead>
+                        <tr>
+     
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">ISBN</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="project.js"></script>
+</body>
+</html>   
